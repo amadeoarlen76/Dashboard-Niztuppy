@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+ 
+header.navbar-container {
+  background-color:#6499E9;
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+ 
+header.navbar-container .logo{
+  width: 70px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+ 
+header.navbar-container .container ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+ 
+header.navbar-container .container li {
+  list-style-type: none;
+}
+ 
+header.navbar-container .container li a {
+  text-decoration: none;
+  font-size: 1.20rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+ 
+header.navbar-container .container li:hover a {
+  background-color: #425c77;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem;
+  flex-direction: column;
+}
+.content-container{
+  padding-bottom: 1%;
+  margin-left: 4vh;
+}
+.content-dash{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.content-tulisan h1{
+  font-size: 30px;
+}
+.content-tulisan p{
+  font-size: 20px;
+}
+
+.content-tulisan button{
+  padding: .8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  color:white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color:#0D6EFD;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+.content-tulisan button:hover{
+  border: 3px solid #2D3E50;
+  color: #2D3E50;
+  background-color: transparent;
+}
+.foto{
+  width: 70vh;
+  flex: 1;
+  display: flex;
+}
+/* Pengaturan konten 2 */
+.aboutnya{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  padding: 2rem 6rem;
+
+}
+.gambar{
+  flex: 1;
+  width: 70vh;
+  display: flex;
+}
+.about-tulisan h2{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.about-tulisan p{
+  font-size: 20px;
+  text-align: justify;
+  padding-right: 3rem;
+  font-weight: 400;
+}
+.about-container{
+  background-color: #A6F6FF;
+  padding: 4rem 0;
+}
+
+
+.product-container{
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 1rem;
+}
+.produk-judul{
+  justify-content: space-around;
+}
+.produknya{
+  display: flex;
+  flex-direction: column;
+}
+.produk-judul{
+  text-align: center;
+}
+.produk-judul h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.produk-judul p{
+  font-size: 18;
+  margin-bottom: 3rem;
+}
+.box-produk-list-satu{
+  padding: 0 6rem 2rem 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  gap: 20vh;
+}
+.produk{
+  background-color: #9EDDFF;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fotoprodukk{
+  width: 10vw;
+  flex: 1;
+}
+.produk h3{
+  text-align: center;
+}
+.fotoproduk{
+  width: 200px;
+  flex: 1;
+}
+/* artikel 3 */
+.call-container{
+  padding-bottom: 3%;
+}
+.pewarnaan{
+  background-color: #BEFFF7;
+}
+.kontaknya{
+  text-align: center;
+  padding: 3rem;
+}
+.sosmed{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+.kontaknya h2{
+  font-size: 30px;
+}
+.kontaknya p{
+  font-size: 20px;
+}
+.media h3{
+  text-align: center;
+}
+.icon{
+  width: 10vw;
+  flex: 1;
+}
+
+/* Aside */
+aside {
+  flex: 1;
+  background-color: #9EDDFF;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+aside header h2{
+  text-align: center;
+}
+aside table{
+  text-align: justify;
+}
+
+/* pengaturan footer */
+footer {
+  padding: 2rem 0 0 4rem;
+  color: #ffffff;
+  background-color: #6499E9;
+}
+
+
+
+  /* Mode Device (landscape tablets, resolusi 1045px kebawah)*/
+  @media screen and (max-width: 1045px){
+    .fotoprodukk{
+      width: 160px;
+      height: 160px;
+      flex: 1;
+    }
+    .content-dash{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .content-tulisan h1{
+      font-size: 20px;
+    }
+    .content-tulisan p{
+      font-size: 16px;
+    }
+    .foto{
+      width: 60vh;
+    }
+    /* article kedua */
+
+    .aboutnya{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-tulisan h1{
+      font-size: 20px;
+    }
+    .about-tulisan p{
+      font-size: 16px;
+    }
+    .gambar{
+      width: 60vh;
+      transform: translateX(-8%);
+    }
+  }
+
+  @media screen and (max-width: 750px){
+    .product-container{
+      transform: translateX(-1%);
+    }
+    .content-container{
+      padding-bottom: 10vh;
+      margin: 2%;
+      
+    }
+    .sosmed{
+      display:flex;
+      flex-direction: column;
+    }
+    .media{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: space-between;
+    }
+    .foto{
+      display: none;
+    }
+  }
